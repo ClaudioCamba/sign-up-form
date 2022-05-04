@@ -128,7 +128,48 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+* {
+  box-sizing: border-box;
+}
 /* Variables */
+:root {
+  --white-color: #fff;
+  --padding-10: 10px;
+  --black-transparent: rgba(0, 0, 0, 0.2);
+}
 /* Functions cal(), max(), min() and clamp()*/
 /* rem */
+
+/* KV - Left Image */
+.signup-container .signup-kv {
+  background-image: url("../img/kendal-TW2bfT_tWDI-unsplash.jpg"); /* The image used */
+  background-color: #eef1f0; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  width: max(37.15%, 535px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 225px 0 10px 0;
+}
+.signup-kv-title {
+  background-color: var(--black-transparent);
+  padding: var(--padding-10, 10px);
+  width: 100%;
+  text-align: center;
+}
+
+.signup-container .signup-main {
+  background-color: lightblue;
+  width: max(62.85%, 905px);
+}
+.signup-container {
+  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
