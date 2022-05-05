@@ -89,7 +89,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  /* font: inherit; */
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -141,8 +141,11 @@ html body {
   --white-color: #fff;
   --padding-10: 10px;
   --green-transparent: rgba(89, 109, 72, 0.7);
+  --padding-45: min(2.813rem, 45px);
+  --padding-60: min(3.75rem, 60px);
+  --padding-196: min(12.25rem, 196px);
 
-  font-size: min(1vw, 16px);
+  font-size: min(1.111vw, 16px);
 }
 
 /* All */
@@ -192,8 +195,58 @@ html body {
   color: var(--green-transparent);
 }
 
-/* Sign-up Form */
+/* Sign-up Form section */
 .signup-container .signup-main {
-  background-color: lightblue;
+  background-color: #f9fafb;
   width: max(62.85%, 905px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Sign-up Top */
+.signup-main > h2,
+.signup-main legend {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.signup-main > h2 em {
+  font-style: revert;
+}
+
+/* Sing-up Middle */
+.signup-main form {
+  background-color: #fff;
+  padding: 1.5rem var(--padding-196) 1.5rem var(--padding-45);
+  position: relative;
+}
+
+.signup-main fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: min(4.8611vw, 70px); */
+}
+
+fieldset > label {
+  flex: 1 1 262px;
+  margin-right: min(4.8611vw, 70px);
+}
+
+fieldset > label > input {
+  display: block;
+  width: 100%;
+}
+
+/* Sign-up Bottom */
+input[type="submit"] {
+  position: absolute;
+  bottom: 0;
+}
+
+.signup-main > h2,
+.signup-main > p {
+  padding: 0 8rem 0 var(--padding-45);
 }
