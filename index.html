@@ -35,7 +35,7 @@
         <h2>
           This is not a real online service! You know you need something like
           this in your life to help you realize your deepest dreams. <br />
-          Sign up <i>now</i> to get started
+          Sign up <i>now</i> to get started.
         </h2>
 
         <h2>You <i>know</i> you want to.</h2>
@@ -45,25 +45,29 @@
             <legend>Let's do this!</legend>
 
             <label for="firstName"
-              >First Name <input type="text" name="firstName" id="firstName"
+              >First Name
+              <input type="text" name="firstName" id="firstName" required
             /></label>
 
             <label for="lastName"
-              >Last Name <input type="text" name="lastName" id="lastName"
+              >Last Name
+              <input type="text" name="lastName" id="lastName" required
             /></label>
 
             <label for="email"
-              >Email <input type="email" name="email" id="email"
+              >Email <input type="email" name="email" id="email" required
             /></label>
 
             <label for="phoneNumber"
               >Phone Number
-              <input type="tel" name="phoneNumber" id="phoneNumber"
+              <input type="tel" name="phoneNumber" id="phoneNumber" required
             /></label>
 
-            <label for="password"
-              >Password <input type="password" name="password" id="password"
-            /></label>
+            <label for="password" class="error"
+              >Password
+              <input type="password" name="password" id="password" required />
+              <span>*Passwords do not match</span>
+            </label>
 
             <label for="passwordConfirm"
               >Confirm Password
@@ -71,6 +75,7 @@
                 type="password"
                 name="passwordConfirm"
                 id="passwordConfirm"
+                required
             /></label>
 
             <input type="submit" value="Create Account" />
